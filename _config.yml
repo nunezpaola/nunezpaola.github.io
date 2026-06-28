@@ -1,5 +1,5 @@
 title: "Paola Nunez"
-description: "Notas sobre agentes, automatización y sistemas técnicos."
+description: "Notas sobre agentes, automatización, evaluación de modelos y sistemas técnicos."
 url: ""
 baseurl: ""
 lang: "es"
@@ -9,7 +9,7 @@ permalink: /:categories/:year/:month/:day/:title/
 
 author:
   name: "Paola Nunez"
-  role: "Markets, automation and technical research"
+  role: "Agents, automation and technical research"
 
 collections:
   posts:
