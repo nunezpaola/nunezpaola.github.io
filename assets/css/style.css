@@ -15,7 +15,6 @@
 }
 
 * { box-sizing: border-box; }
-
 html, body { margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
@@ -36,35 +35,42 @@ a { color: inherit; }
   width: min(1180px, 92vw);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 64px;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
 }
 
-.profile-sidebar { padding-top: 32px; }
+.profile-sidebar {
+  grid-column: 1;
+  padding-top: 32px;
+}
 
 .profile-card {
   position: sticky;
   top: 32px;
+  display: block;
   border: 1px solid var(--line);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(15, 27, 49, 0.78), rgba(11, 21, 38, 0.62));
-  padding: 22px;
+  background: linear-gradient(180deg, rgba(15, 27, 49, 0.92), rgba(11, 21, 38, 0.82));
+  padding: 24px;
   box-shadow: var(--shadow);
 }
 
-.profile-kicker {
+.profile-name {
   margin: 0 0 14px;
   color: var(--ink);
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
+
+.profile-kicker { margin: 0 0 14px; color: var(--ink); font-size: 1.08rem; font-weight: 700; letter-spacing: -0.02em; }
 
 .profile-copy {
   margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
-  line-height: 1.65;
+  line-height: 1.72;
 }
 
 .profile-links {
@@ -75,18 +81,23 @@ a { color: inherit; }
 }
 
 .profile-links a {
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+  color: var(--accent);
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 7px 11px;
   font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.76rem;
 }
 
 .profile-links a:hover { border-color: #37557d; color: var(--ink); }
 
-.page-main { min-width: 0; }
+.page-main {
+  grid-column: 2;
+  min-width: 0;
+}
 
 .site-header, .container, .site-footer {
   width: 100%;
@@ -223,7 +234,10 @@ a { color: inherit; }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 900px) {
-  .site-shell { display: block; }
+  .site-shell {
+    width: min(860px, 92vw);
+    display: block;
+  }
   .profile-sidebar { padding-top: 24px; }
   .profile-card { position: static; margin-bottom: 32px; }
 }
