@@ -4,12 +4,11 @@ title: "Inicio"
 ---
 
 <section class="hero">
-  <p class="eyebrow">Research notes · agentes · mercados</p>
+  <p class="eyebrow">Research notes · agentes · sistemas</p>
   <h1>Experimentos técnicos sobre agentes, datos y sistemas.</h1>
   <p class="lead">
-    Soy Paola Nuñez. Uso este sitio como cuaderno público para documentar pruebas,
-    decisiones de diseño y aprendizajes sobre IA aplicada, automatización,
-    market data y workflows reproducibles.
+    Uso este sitio como cuaderno público para documentar pruebas, decisiones de diseño
+    y aprendizajes sobre IA aplicada, automatización, evaluación de modelos y workflows reproducibles.
   </p>
   <div class="hero-actions">
     <a class="cta" href="#posts">Leer notas</a>
@@ -19,9 +18,9 @@ title: "Inicio"
 
 <section class="topics" aria-label="Temas">
   <span>LLM agents</span>
-  <span>market data</span>
+  <span>evaluation</span>
   <span>automation</span>
-  <span>technical research</span>
+  <span>research systems</span>
 </section>
 
 <section id="posts" class="post-list">
