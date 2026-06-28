@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Trabajo cerca del mercado, donde cada decisión se mide en probabilidad y cada error tiene precio.
+Trabajo en mesa, combinando mercados, automatización y herramientas de datos.
 
-Este sitio es un cuaderno público: pruebo ideas, las dejo correr solas y registro qué aguanta.
-Me interesa el límite entre el azar y la señal, y cómo construir procesos que no dependan de mi humor.
+Este sitio es un cuaderno público donde documento experimentos personales sobre agentes de IA,
+research técnico, market data, sistemas de trading, automatización y software.
 
-Escribo sobre problemas concretos: cómo separar suerte de ventaja, cómo diseñar workflows que se
-repiten sin mí, y cómo delegar lo aburrido a sistemas que no se cansan ni se enamoran de una hipótesis.
+La idea es escribir sobre problemas concretos: cómo evaluar modelos, cómo diseñar workflows reproducibles,
+cómo construir herramientas pequeñas y cómo separar resultados reales de demos lindas.
