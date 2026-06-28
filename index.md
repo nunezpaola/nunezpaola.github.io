@@ -4,15 +4,15 @@ title: "Inicio"
 ---
 
 <section class="hero">
-  <p class="eyebrow"></p>
-<h1>Notas sobre agentes y sistemas que se pueden medir.</h1>
-<p>
-  Soy Paola Nuñez. Este sitio es un cuaderno público donde documento experimentos,
-  decisiones de diseño, errores y aprendizajes sobre agentes de IA, automatización,
-  y research técnico.
-</p>
+  <p class="eyebrow">señales · sistemas · decisiones bajo incertidumbre</p>
+  <h1>Buscar ventaja donde el ruido parece total.</h1>
+  <p>
+    Soy Paola Nuñez. Acá documento cómo convierto ideas en sistemas que deciden solos:
+    hipótesis, datos, validación fría y procesos que sobreviven cuando el mercado cambia.
+    Sin demos lindas, solo lo que aguanta evidencia.
+  </p>
   <a class="cta" href="#posts">Leer los posts</a>
-  <a href="{{ '/about/' | relative_url }}">About</a>
+  <a class="ghost" href="{{ '/about/' | relative_url }}">About</a>
 </section>
 
 

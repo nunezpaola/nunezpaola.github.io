@@ -6,6 +6,7 @@
   --ink: #151515;
   --muted: #666666;
   --accent: #2454ff;
+  --accent-2: #00c2a8;
   --line: #e4e4df;
   --shadow: none;
 }
@@ -79,12 +80,6 @@ body {
   font-size: 0.86rem;
 }
 
-.hero h1 {
-  margin: 8px 0 16px;
-  font-size: clamp(1.9rem, 4vw, 3.1rem);
-  line-height: 1.1;
-}
-
 .cta {
   display: inline-block;
   margin-top: 10px;
@@ -94,6 +89,23 @@ body {
   padding: 11px 16px;
   border-radius: 10px;
   font-weight: 700;
+}
+
+.hero h1 {
+  margin: 8px 0 16px;
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+  line-height: 1.1;
+}
+
+.ghost {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .cards {
