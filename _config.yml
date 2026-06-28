@@ -1,5 +1,5 @@
-title: "Paola Nunez | Quant Trading"
-description: "Blog profesional sobre experimentacion con agentes y estrategias de Quant Trading."
+title: "Paola Nunez"
+description: "Blog sobre cosas random que me dan curiosidad."
 url: ""
 baseurl: ""
 lang: "es"
@@ -9,7 +9,7 @@ permalink: /:categories/:year/:month/:day/:title/
 
 author:
   name: "Paola Nunez"
-  role: "Quant Researcher & Agent Builder"
+  role: "Developer"
 
 collections:
   posts:
