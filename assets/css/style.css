@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 :root {
-  --bg: #f2efe7;
-  --paper: #fffdf8;
-  --ink: #111111;
-  --muted: #5c5a56;
-  --accent: #0b6e4f;
-  --accent-2: #d94f04;
-  --line: #dbd6cb;
-  --shadow: 0 14px 34px rgba(17, 17, 17, 0.09);
+  --bg: #f7f7f4;
+  --paper: #ffffff;
+  --ink: #151515;
+  --muted: #666666;
+  --accent: #2454ff;
+  --line: #e4e4df;
+  --shadow: none;
 }
 
 * {
@@ -24,10 +23,7 @@ body {
 body {
   font-family: "Space Grotesk", sans-serif;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 10% 0%, #fff6d7 0, transparent 35%),
-    radial-gradient(circle at 90% 0%, #d7f6eb 0, transparent 30%),
-    var(--bg);
+  background: var(--bg);
   line-height: 1.65;
 }
 
@@ -174,7 +170,7 @@ body {
 }
 
 .site-footer {
-  width: min(1100px, 92vw);
+  width: min(820px, 92vw);
   margin: 0 auto 26px;
   font-size: 0.92rem;
   color: var(--muted);

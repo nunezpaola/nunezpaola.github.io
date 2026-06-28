@@ -1,16 +1,18 @@
 ---
-layout: home
+layout: default
 title: "Inicio"
 ---
 
 <section class="hero">
   <p class="eyebrow"></p>
-  <h1>Me divierten las cosas que funcionan solas.</h1>
-  <p>
-    Soy Paola Nuñez. En este blog documento ideas, resultados, errores, aprendizajes y procesos
-    replicables aplicados a IA.
-  </p>
+<h1>Notas sobre agentes y sistemas que se pueden medir.</h1>
+<p>
+  Soy Paola Nuñez. Este sitio es un cuaderno público donde documento experimentos,
+  decisiones de diseño, errores y aprendizajes sobre agentes de IA, automatización,
+  y research técnico.
+</p>
   <a class="cta" href="#posts">Leer los posts</a>
+  <a href="{{ '/about/' | relative_url }}">About</a>
 </section>
 
 
