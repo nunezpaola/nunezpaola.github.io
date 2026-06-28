@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'es' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav" aria-label="Navegacion principal">
+        <a href="{{ '/' | relative_url }}">Inicio</a>
+        <a href="{{ '/#posts' | relative_url }}">Posts</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>Construido con Jekyll.</p>
+    </footer>
+  </body>
+</html>

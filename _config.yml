@@ -1,0 +1,18 @@
+title: "Paola Nunez | Quant Trading"
+description: "Blog profesional sobre experimentacion con agentes y estrategias de Quant Trading."
+url: ""
+baseurl: ""
+lang: "es"
+timezone: "America/Argentina/Buenos_Aires"
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+author:
+  name: "Paola Nunez"
+  role: "Quant Researcher & Agent Builder"
+
+collections:
+  posts:
+    output: true
+
+plugins: []

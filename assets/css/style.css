@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+:root {
+  --bg: #f2efe7;
+  --paper: #fffdf8;
+  --ink: #111111;
+  --muted: #5c5a56;
+  --accent: #0b6e4f;
+  --accent-2: #d94f04;
+  --line: #dbd6cb;
+  --shadow: 0 14px 34px rgba(17, 17, 17, 0.09);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 0%, #fff6d7 0, transparent 35%),
+    radial-gradient(circle at 90% 0%, #d7f6eb 0, transparent 30%),
+    var(--bg);
+  line-height: 1.65;
+}
+
+.site-header {
+  width: min(1100px, 92vw);
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 18px;
+  background: rgba(255, 253, 248, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto 50px;
+}
+
+.hero {
+  background: linear-gradient(120deg, #fffef9, #f9fff3);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  animation: rise 500ms ease-out;
+}
+
+.eyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.86rem;
+}
+
+.hero h1 {
+  margin: 8px 0 16px;
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+  line-height: 1.1;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  padding: 11px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.cards {
+  margin: 22px 0;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cards article {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  padding: 18px;
+}
+
+.cards h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.post-list {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  padding: 22px;
+}
+
+.post-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.post-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--line);
+  padding-bottom: 8px;
+}
+
+.post-list a {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.post {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+  padding: 28px;
+}
+
+.post-meta {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+
+.post h1 {
+  line-height: 1.12;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.site-footer {
+  width: min(1100px, 92vw);
+  margin: 0 auto 26px;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .post-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
