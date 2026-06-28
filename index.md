@@ -5,10 +5,9 @@ title: "Inicio"
 
 <section class="hero">
   <p class="eyebrow">Research notes · agentes · sistemas</p>
-  <h1>Experimentos técnicos sobre agentes, datos y sistemas.</h1>
+  <h1>Make THIS CHEAP</h1>
   <p class="lead">
-    Uso este sitio como cuaderno público para documentar pruebas, decisiones de diseño
-    y aprendizajes sobre IA aplicada, automatización, evaluación de modelos y workflows reproducibles.
+    Blog de experimentos técnicos sobre agentes, datos y sistemas. Uso este sitio como cuaderno para documentar pruebas, decisiones de diseño y aprendizajes sobre IA aplicada, automatización, evaluación de modelos y workflows reproducibles.
   </p>
   <div class="hero-actions">
     <a class="cta" href="#posts">Leer notas</a>
