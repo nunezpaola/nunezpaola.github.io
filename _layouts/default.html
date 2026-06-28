@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
     <div class="site-shell">
       <aside class="profile-sidebar" aria-label="Presentación">
         <div class="profile-card">
-          <p class="profile-kicker">Paola Nuñez</p>
-          <p class="profile-copy">Trabajo en mesa y escribo sobre agentes, automatización, validación de ideas y sistemas técnicos. Este sitio es mi cuaderno público de experimentos.</p>
+          <p class="profile-name">Paola Núñez</p>
+          <p class="profile-copy">
+            Estudié Economía en la Universidad Torcuato Di Tella y hace más de 3 años trabajo en finanzas.
+            Me divierten la programación, los sistemas autónomos y construir herramientas que convierten ideas en procesos reproducibles.
+          </p>
           <div class="profile-links">
             <a href="https://www.linkedin.com/in/paolanunezh/">LinkedIn</a>
             <a href="https://github.com/nunezpaola">GitHub</a>
