@@ -9,21 +9,36 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <nav class="site-nav" aria-label="Navegacion principal">
-        <a href="{{ '/' | relative_url }}">Inicio</a>
-        <a href="{{ '/#posts' | relative_url }}">Posts</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-      </nav>
-    </header>
+    <div class="site-shell">
+      <aside class="profile-sidebar" aria-label="Presentación">
+        <div class="profile-card">
+          <p class="profile-kicker">Paola Nuñez</p>
+          <p class="profile-copy">Trabajo en mesa y escribo sobre agentes, automatización, validación de ideas y sistemas técnicos. Este sitio es mi cuaderno público de experimentos.</p>
+          <div class="profile-links">
+            <a href="https://www.linkedin.com/in/paolanunezh/">LinkedIn</a>
+            <a href="https://github.com/nunezpaola">GitHub</a>
+          </div>
+        </div>
+      </aside>
 
-    <main class="container">
-      {{ content }}
-    </main>
+      <div class="page-main">
+        <header class="site-header">
+          <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <nav class="site-nav" aria-label="Navegación principal">
+            <a href="{{ '/' | relative_url }}">Inicio</a>
+            <a href="{{ '/#posts' | relative_url }}">Posts</a>
+            <a href="{{ '/about/' | relative_url }}">About</a>
+          </nav>
+        </header>
 
-    <footer class="site-footer">
-      <p>Research notes. Built with Jekyll.</p>
-    </footer>
+        <main class="container">
+          {{ content }}
+        </main>
+
+        <footer class="site-footer">
+          <p>Research notes. Built with Jekyll.</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
