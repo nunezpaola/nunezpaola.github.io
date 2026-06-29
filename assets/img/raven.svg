@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Raven icon">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#18345a"/>
+      <stop offset="1" stop-color="#06101d"/>
+    </radialGradient>
+    <linearGradient id="cyan" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8bc2ff"/>
+      <stop offset="1" stop-color="#2f7dd3"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#bg)" stroke="#1d2c46" stroke-width="2"/>
+  <path d="M22 72 43 35 73 30 102 52 72 49 85 62 63 57 53 83 43 64Z" fill="#0a1426"/>
+  <path d="M43 35 62 46 73 30Z" fill="#2b4068"/>
+  <path d="M62 46 102 52 73 30Z" fill="#47618e"/>
+  <path d="M43 35 22 72 52 56Z" fill="#182943"/>
+  <path d="M52 56 63 57 53 83 35 94Z" fill="#12223a"/>
+  <path d="M63 57 85 62 70 96Z" fill="#203755"/>
+  <path d="M72 49 102 52 82 42Z" fill="#6d86b8" opacity="0.75"/>
+  <path d="M26 68 43 35 73 30 101 52" fill="none" stroke="url(#cyan)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="65" cy="43" r="7" fill="#07101d"/>
+  <circle cx="66" cy="42" r="4" fill="#8bc2ff"/>
+  <circle cx="68" cy="40" r="1.5" fill="#edf4ff"/>
+  <path d="M19 83c19-14 32-19 48-18" fill="none" stroke="#2f7dd3" stroke-width="1.2" opacity="0.25"/>
+  <path d="M18 32c22-14 54-15 78 1" fill="none" stroke="#8bc2ff" stroke-width="1" opacity="0.18"/>
+</svg>
