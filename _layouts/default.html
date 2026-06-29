@@ -1,8 +1,7 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'es' }}">
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
@@ -10,14 +9,10 @@
   </head>
   <body>
     <div class="site-shell">
-      <aside class="profile-sidebar" aria-label="Presentación">
+      <aside class="profile-sidebar">
         <div class="profile-card">
-          <img class="profile-avatar" src="data:image/webp;base64,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" alt="Cuervo geométrico">
-          <p class="profile-name">Paola Núñez</p>
-          <p class="profile-copy">
-            Estudié Economía en la Universidad Torcuato Di Tella y algo más de 3 años trabajo en finanzas.
-            Me divierten la programación y los sistemas autónomos.
-          </p>
+          <p class="profile-name">Paola Nunez</p>
+          <p class="profile-copy">Estudié Economía en la Universidad Torcuato Di Tella y algo más de 3 años trabajo en finanzas. Me divierten la programación y los sistemas autónomos.</p>
           <div class="profile-links">
             <a href="https://www.linkedin.com/in/paolanunezh/">LinkedIn</a>
             <a href="https://github.com/nunezpaola">GitHub</a>
@@ -27,21 +22,15 @@
 
       <div class="page-main">
         <header class="site-header">
-          <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-          <nav class="site-nav" aria-label="Navegación principal">
+          <a class="brand" href="{{ '/' | relative_url }}"><img class="brand-logo" src="{{ '/assets/img/raven.svg' | relative_url }}" alt=""><span>{{ site.title }}</span></a>
+          <nav class="site-nav">
             <a href="{{ '/' | relative_url }}">Inicio</a>
             <a href="{{ '/#posts' | relative_url }}">Posts</a>
             <a href="{{ '/about/' | relative_url }}">About</a>
           </nav>
         </header>
-
-        <main class="container">
-          {{ content }}
-        </main>
-
-        <footer class="site-footer">
-          <p>Research notes. Built with Jekyll.</p>
-        </footer>
+        <main class="container">{{ content }}</main>
+        <footer class="site-footer"><p>Research notes. Built with Jekyll.</p></footer>
       </div>
     </div>
   </body>
